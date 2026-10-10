@@ -1,0 +1,370 @@
+{
+  "keyword": "n8n image generation",
+  "title": "n8n image generation, plus Zapier and Make: which AI image and video APIs have a node, an app or a webhook",
+  "lastChecked": "2026-10-10",
+  "capabilityChecks": [
+    {
+      "key": "zapierApp",
+      "label": "Zapier app"
+    },
+    {
+      "key": "makeApp",
+      "label": "Make app"
+    },
+    {
+      "key": "builtInN8nNode",
+      "label": "Built-in n8n node"
+    },
+    {
+      "key": "communityN8nNode",
+      "label": "Community n8n node"
+    },
+    {
+      "key": "inboundWebhookTrigger",
+      "label": "Inbound webhook trigger"
+    },
+    {
+      "key": "completionCallback",
+      "label": "Completion callback"
+    },
+    {
+      "key": "pollingEndpoint",
+      "label": "Polling endpoint"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "hosted node canvas whose saved workflows run through a REST API",
+      "homepage": "https://www.wireflow.ai/ai-workflow-api",
+      "docs": "https://www.wireflow.ai/docs/api/webhooks",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image, video and audio model nodes in one workflow",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: start a run with POST /run and an API key, and add a webhook block for the result. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://www.wireflow.ai/docs/api/webhooks"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": false,
+        "makeApp": false,
+        "builtInN8nNode": false,
+        "communityN8nNode": true,
+        "inboundWebhookTrigger": false,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "OpenAI",
+      "tagline": "image and video generation API",
+      "homepage": "https://openai.com/api/",
+      "docs": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai",
+      "pricing": "https://developers.openai.com/api/docs/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image generation and editing, video jobs",
+      "freeTier": "unverified",
+      "repo": "openai/openai-python",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: the built-in n8n OpenAI node and its image and video operations. This is a documentation URL, not an executed example.",
+          "lang": "text",
+          "code": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": true,
+        "makeApp": true,
+        "builtInN8nNode": true,
+        "communityN8nNode": null,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 31789,
+        "lastPush": "2026-10-09T20:49:21Z",
+        "latestRelease": "v3.28.0",
+        "latestReleaseDate": "2026-10-09",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Google Gemini API",
+      "tagline": "Google's API for Gemini image and video models",
+      "homepage": "https://ai.google.dev/gemini-api/docs",
+      "docs": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.googlegemini",
+      "pricing": "https://ai.google.dev/gemini-api/docs/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image generation and editing, video generation",
+      "freeTier": "unverified",
+      "repo": "googleapis/python-genai",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: the built-in n8n Google Gemini node and its image and video operations. This is a documentation URL, not an executed example.",
+          "lang": "text",
+          "code": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.googlegemini"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": true,
+        "makeApp": true,
+        "builtInN8nNode": true,
+        "communityN8nNode": null,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 4013,
+        "lastPush": "2026-10-10T02:49:49Z",
+        "latestRelease": "v2.29.0",
+        "latestReleaseDate": "2026-10-07",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 4,
+      "name": "Replicate",
+      "tagline": "API for running hosted open and proprietary models",
+      "homepage": "https://replicate.com/",
+      "docs": "https://replicate.com/docs/topics/webhooks/setup-webhook",
+      "pricing": "https://replicate.com/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Hosted image, video and other models",
+      "freeTier": "unverified",
+      "repo": "replicate/replicate-python",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested. The Zapier app named Replicate is an unrelated feedback tool; Make lists only community-developed Replicate apps.",
+      "quickstart": [
+        {
+          "label": "Setup reference: create a prediction with a webhook and webhook_events_filter. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://replicate.com/docs/topics/webhooks/setup-webhook"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": false,
+        "makeApp": false,
+        "builtInN8nNode": false,
+        "communityN8nNode": true,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 918,
+        "lastPush": "2025-08-26T17:18:17Z",
+        "latestRelease": "1.0.7",
+        "latestReleaseDate": "2025-05-27",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 5,
+      "name": "fal",
+      "tagline": "generative media API with a queue for long jobs",
+      "homepage": "https://fal.ai/",
+      "docs": "https://fal.ai/docs/documentation/model-apis/inference/queue",
+      "pricing": "https://fal.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Hosted image, video and audio models",
+      "freeTier": "unverified",
+      "repo": "fal-ai/fal",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested. The n8n node @fal-ai/n8n-nodes-fal is published by fal and listed as verified by n8n.",
+      "quickstart": [
+        {
+          "label": "Setup reference: n8n's page for the fal.ai node built by fal. This is a documentation URL, not an executed example.",
+          "lang": "text",
+          "code": "https://n8n.io/integrations/falai/"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": false,
+        "makeApp": true,
+        "builtInN8nNode": false,
+        "communityN8nNode": true,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 965,
+        "lastPush": "2026-10-09T21:30:04Z",
+        "latestRelease": "fal_v1.81.4",
+        "latestReleaseDate": "2026-10-08",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Runway",
+      "tagline": "API for Runway's video and image models",
+      "homepage": "https://dev.runwayml.com/",
+      "docs": "https://docs.dev.runwayml.com/api-details/sdks/",
+      "pricing": "https://docs.dev.runwayml.com/guides/pricing/",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Video and image generation models",
+      "freeTier": "unverified",
+      "repo": "runwayml/sdk-python",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested. No completion webhook is documented; tasks are polled.",
+      "quickstart": [
+        {
+          "label": "Setup reference: the official SDKs and the task polling method. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://docs.dev.runwayml.com/api-details/sdks/"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": true,
+        "makeApp": true,
+        "builtInN8nNode": false,
+        "communityN8nNode": true,
+        "inboundWebhookTrigger": null,
+        "completionCallback": null,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 26,
+        "lastPush": "2026-10-02T18:45:33Z",
+        "latestRelease": "v5.21.0",
+        "latestReleaseDate": "2026-10-02",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 7,
+      "name": "Leonardo.Ai",
+      "tagline": "image and video generation API",
+      "homepage": "https://docs.leonardo.ai/docs/getting-started",
+      "docs": "https://docs.leonardo.ai/docs/guide-to-the-webhook-callback-feature",
+      "pricing": "https://docs.leonardo.ai/docs/payg-guide",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image and video generation models",
+      "freeTier": "unverified",
+      "repo": "Leonardo-Interactive/leonardo-python-sdk",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: set a webhook callback URL on a production API key. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://docs.leonardo.ai/docs/guide-to-the-webhook-callback-feature"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": false,
+        "makeApp": true,
+        "builtInN8nNode": false,
+        "communityN8nNode": null,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": 25,
+        "lastPush": "2026-08-04T00:43:49Z",
+        "latestRelease": "v7.0.0",
+        "latestReleaseDate": "2026-02-05",
+        "checkedAt": "2026-10-10"
+      }
+    },
+    {
+      "n": 8,
+      "name": "Stability AI",
+      "tagline": "Stable Image API for generation and upscaling",
+      "homepage": "https://platform.stability.ai/",
+      "docs": "https://platform.stability.ai/docs/api-reference",
+      "pricing": "https://platform.stability.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image generation, editing and upscaling",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested. No completion webhook is documented; async results are polled and stored for 24 hours.",
+      "quickstart": [
+        {
+          "label": "Setup reference: the REST API reference, including GET /v2beta/results/{id}. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://platform.stability.ai/docs/api-reference"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": false,
+        "makeApp": true,
+        "builtInN8nNode": false,
+        "communityN8nNode": true,
+        "inboundWebhookTrigger": null,
+        "completionCallback": null,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 9,
+      "name": "Ideogram",
+      "tagline": "image generation API with async endpoints and signed webhooks",
+      "homepage": "https://developer.ideogram.ai/ideogram-api/api-overview",
+      "docs": "https://developer.ideogram.ai/ideogram-api/webhooks",
+      "pricing": "https://ideogram.ai/pricing/?pricing_tab=api",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Image generation, editing and upscaling",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: async generation with a signed webhook and a polling fallback. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://developer.ideogram.ai/ideogram-api/webhooks"
+        }
+      ],
+      "capabilities": {
+        "zapierApp": true,
+        "makeApp": true,
+        "builtInN8nNode": false,
+        "communityN8nNode": null,
+        "inboundWebhookTrigger": null,
+        "completionCallback": true,
+        "pollingEndpoint": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
