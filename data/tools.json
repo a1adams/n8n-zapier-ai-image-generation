@@ -1,7 +1,7 @@
 {
   "keyword": "n8n image generation",
   "title": "n8n image generation, plus Zapier and Make: which AI image and video APIs have a node, an app or a webhook",
-  "lastChecked": "2026-10-10",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "zapierApp",
@@ -37,7 +37,7 @@
       "n": 1,
       "name": "Wireflow",
       "tagline": "hosted node canvas whose saved workflows run through a REST API",
-      "homepage": "https://www.wireflow.ai/ai-workflow-api",
+      "homepage": "https://www.wireflow.ai",
       "docs": "https://www.wireflow.ai/docs/api/webhooks",
       "pricing": "https://www.wireflow.ai/pricing",
       "claudeConnection": null,
@@ -53,6 +53,8 @@
           "code": "https://www.wireflow.ai/docs/api/webhooks"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/ai-workflow-api",
+      "moneyPageLabel": "Wireflow AI workflow API page",
       "capabilities": {
         "zapierApp": false,
         "makeApp": false,
@@ -100,11 +102,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 31789,
-        "lastPush": "2026-10-09T20:49:21Z",
+        "stars": 31800,
+        "lastPush": "2026-10-11T03:09:22Z",
         "latestRelease": "v3.28.0",
         "latestReleaseDate": "2026-10-09",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -137,11 +139,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 4013,
-        "lastPush": "2026-10-10T02:49:49Z",
+        "stars": 4015,
+        "lastPush": "2026-10-11T02:27:23Z",
         "latestRelease": "v2.29.0",
         "latestReleaseDate": "2026-10-07",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -174,11 +176,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 918,
+        "stars": 917,
         "lastPush": "2025-08-26T17:18:17Z",
         "latestRelease": "1.0.7",
         "latestReleaseDate": "2025-05-27",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -211,11 +213,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 965,
+        "stars": 966,
         "lastPush": "2026-10-09T21:30:04Z",
         "latestRelease": "fal_v1.81.4",
         "latestReleaseDate": "2026-10-08",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -252,7 +254,7 @@
         "lastPush": "2026-10-02T18:45:33Z",
         "latestRelease": "v5.21.0",
         "latestReleaseDate": "2026-10-02",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -289,7 +291,7 @@
         "lastPush": "2026-08-04T00:43:49Z",
         "latestRelease": "v7.0.0",
         "latestReleaseDate": "2026-02-05",
-        "checkedAt": "2026-10-10"
+        "checkedAt": "2026-10-11"
       }
     },
     {

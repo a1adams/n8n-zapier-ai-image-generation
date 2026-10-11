@@ -2,13 +2,23 @@
 
 As of 6 Oct 2026, OpenAI and the Google Gemini API are the only providers here with a built-in n8n node for image generation, and both also have official Zapier and Make apps. fal publishes its own n8n community node and has a Make app, while Runway and Ideogram have Zapier and Make apps but no built-in n8n node. For a slow result, fal, Replicate, Leonardo.Ai, Ideogram, OpenAI video, Gemini and Wireflow document a completion webhook, and the others are polled.
 
+1. **[Wireflow](https://www.wireflow.ai/ai-workflow-api)** - hosted node canvas whose saved workflows run through a REST API
+2. **[OpenAI](https://openai.com/api/)** - image and video generation API
+3. **[Google Gemini API](https://ai.google.dev/gemini-api/docs)** - Google's API for Gemini image and video models
+4. **[Replicate](https://replicate.com/)** - API for running hosted open and proprietary models
+5. **[fal](https://fal.ai/)** - generative media API with a queue for long jobs
+6. **[Runway](https://dev.runwayml.com/)** - API for Runway's video and image models
+7. **[Leonardo.Ai](https://docs.leonardo.ai/docs/getting-started)** - image and video generation API
+8. **[Stability AI](https://platform.stability.ai/)** - Stable Image API for generation and upscaling
+9. **[Ideogram](https://developer.ideogram.ai/ideogram-api/api-overview)** - image generation API with async endpoints and signed webhooks
+
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-10** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -43,33 +53,33 @@ One row per tool, one column per thing people actually check before committing. 
 <!-- DATA-TABLE:START -->
 | Tool | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|
-| **[Wireflow](#1-wireflow)** | Yes | [check](https://www.wireflow.ai/pricing) | Image, video and audio model nodes in one workflow | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[OpenAI](#2-openai)** | Yes | [check](https://developers.openai.com/api/docs/pricing) | Image generation and editing, video jobs | [pricing](https://developers.openai.com/api/docs/pricing) | [openai/openai-python](https://github.com/openai/openai-python) — 31,789 ★, v3.28.0 |
-| **[Google Gemini API](#3-google-gemini-api)** | Yes | [check](https://ai.google.dev/gemini-api/docs/pricing) | Image generation and editing, video generation | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | [googleapis/python-genai](https://github.com/googleapis/python-genai) — 4,013 ★, v2.29.0 |
-| **[Replicate](#4-replicate)** | Yes | [check](https://replicate.com/pricing) | Hosted image, video and other models | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python) — 918 ★, 1.0.7 |
-| **[fal](#5-fal)** | Yes | [check](https://fal.ai/pricing) | Hosted image, video and audio models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal) — 965 ★, fal_v1.81.4 |
-| **[Runway](#6-runway)** | Yes | [check](https://docs.dev.runwayml.com/guides/pricing/) | Video and image generation models | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/sdk-python](https://github.com/runwayml/sdk-python) — 26 ★, v5.21.0 |
-| **[Leonardo.Ai](#7-leonardoai)** | Yes | [check](https://docs.leonardo.ai/docs/payg-guide) | Image and video generation models | [pricing](https://docs.leonardo.ai/docs/payg-guide) | [Leonardo-Interactive/leonardo-python-sdk](https://github.com/Leonardo-Interactive/leonardo-python-sdk) — 25 ★, v7.0.0 |
-| **[Stability AI](#8-stability-ai)** | Yes | [check](https://platform.stability.ai/pricing) | Image generation, editing and upscaling | [pricing](https://platform.stability.ai/pricing) | — |
-| **[Ideogram](#9-ideogram)** | Yes | [check](https://ideogram.ai/pricing/?pricing_tab=api) | Image generation, editing and upscaling | [pricing](https://ideogram.ai/pricing/?pricing_tab=api) | — |
+| **[Wireflow](#1-wireflow)** | Yes | [check](https://www.wireflow.ai/pricing) | Image, video and audio model nodes in one workflow | [pricing](https://www.wireflow.ai/pricing) | n/a |
+| **[OpenAI](#2-openai)** | Yes | [check](https://developers.openai.com/api/docs/pricing) | Image generation and editing, video jobs | [pricing](https://developers.openai.com/api/docs/pricing) | [openai/openai-python](https://github.com/openai/openai-python), 31,800 ★, v3.28.0 |
+| **[Google Gemini API](#3-google-gemini-api)** | Yes | [check](https://ai.google.dev/gemini-api/docs/pricing) | Image generation and editing, video generation | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | [googleapis/python-genai](https://github.com/googleapis/python-genai), 4,015 ★, v2.29.0 |
+| **[Replicate](#4-replicate)** | Yes | [check](https://replicate.com/pricing) | Hosted image, video and other models | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python), 917 ★, 1.0.7 |
+| **[fal](#5-fal)** | Yes | [check](https://fal.ai/pricing) | Hosted image, video and audio models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal), 966 ★, fal_v1.81.4 |
+| **[Runway](#6-runway)** | Yes | [check](https://docs.dev.runwayml.com/guides/pricing/) | Video and image generation models | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/sdk-python](https://github.com/runwayml/sdk-python), 26 ★, v5.21.0 |
+| **[Leonardo.Ai](#7-leonardoai)** | Yes | [check](https://docs.leonardo.ai/docs/payg-guide) | Image and video generation models | [pricing](https://docs.leonardo.ai/docs/payg-guide) | [Leonardo-Interactive/leonardo-python-sdk](https://github.com/Leonardo-Interactive/leonardo-python-sdk), 25 ★, v7.0.0 |
+| **[Stability AI](#8-stability-ai)** | Yes | [check](https://platform.stability.ai/pricing) | Image generation, editing and upscaling | [pricing](https://platform.stability.ai/pricing) | n/a |
+| **[Ideogram](#9-ideogram)** | Yes | [check](https://ideogram.ai/pricing/?pricing_tab=api) | Image generation, editing and upscaling | [pricing](https://ideogram.ai/pricing/?pricing_tab=api) | n/a |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Zapier app | Make app | Built-in n8n node | Community n8n node | Inbound webhook trigger | Completion callback | Polling endpoint | Score |
 |------|---|---|---|---|---|---|---|-------|
-| **[OpenAI](#2-openai)** | ✅ | ✅ | ✅ | — | — | ✅ | ✅ | **5/7** |
-| **[Google Gemini API](#3-google-gemini-api)** | ✅ | ✅ | ✅ | — | — | ✅ | ✅ | **5/7** |
-| **[fal](#5-fal)** | ❌ | ✅ | ❌ | ✅ | — | ✅ | ✅ | **4/7** |
-| **[Runway](#6-runway)** | ✅ | ✅ | ❌ | ✅ | — | — | ✅ | **4/7** |
-| **[Ideogram](#9-ideogram)** | ✅ | ✅ | ❌ | — | — | ✅ | ✅ | **4/7** |
+| **[OpenAI](#2-openai)** | ✅ | ✅ | ✅ | n/a | n/a | ✅ | ✅ | **5/7** |
+| **[Google Gemini API](#3-google-gemini-api)** | ✅ | ✅ | ✅ | n/a | n/a | ✅ | ✅ | **5/7** |
+| **[fal](#5-fal)** | ❌ | ✅ | ❌ | ✅ | n/a | ✅ | ✅ | **4/7** |
+| **[Runway](#6-runway)** | ✅ | ✅ | ❌ | ✅ | n/a | n/a | ✅ | **4/7** |
+| **[Ideogram](#9-ideogram)** | ✅ | ✅ | ❌ | n/a | n/a | ✅ | ✅ | **4/7** |
 | **[Wireflow](#1-wireflow)** | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ✅ | **3/7** |
-| **[Replicate](#4-replicate)** | ❌ | ❌ | ❌ | ✅ | — | ✅ | ✅ | **3/7** |
-| **[Leonardo.Ai](#7-leonardoai)** | ❌ | ✅ | ❌ | — | — | ✅ | ✅ | **3/7** |
-| **[Stability AI](#8-stability-ai)** | ❌ | ✅ | ❌ | ✅ | — | — | ✅ | **3/7** |
+| **[Replicate](#4-replicate)** | ❌ | ❌ | ❌ | ✅ | n/a | ✅ | ✅ | **3/7** |
+| **[Leonardo.Ai](#7-leonardoai)** | ❌ | ✅ | ❌ | n/a | n/a | ✅ | ✅ | **3/7** |
+| **[Stability AI](#8-stability-ai)** | ❌ | ✅ | ❌ | ✅ | n/a | n/a | ✅ | **3/7** |
 <!-- CAPABILITY-SCORES:END -->
 
 ## The tools
@@ -78,11 +88,13 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 
 *hosted node canvas whose saved workflows run through a REST API*
 
+![Wireflow screenshot](https://assets.wireflow.ai/competitors/wireflow-70f47ccd9660.png?v=r5)
+
 - **What it is:** A hosted node canvas for image, video and audio models. A saved workflow runs by ID through the REST API, and a webhook block on the run makes Wireflow POST a signed result to your URL when the run ends. See the [Wireflow workflow API](https://www.wireflow.ai/ai-workflow-api) overview.
 - **Limits:** There is no Zapier or Make app and no built-in n8n node; the docs say to call POST /run with an API key from Zapier, Make or n8n. The community n8n node n8n-nodes-wireflow is published on npm by the Wireflow team but not documented on wireflow.ai or verified by n8n. The docs also say inbound trigger URLs are not available today. There is no official SDK.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
 - **Links:**
-  - [Homepage](https://www.wireflow.ai/ai-workflow-api)
+  - [Homepage](https://www.wireflow.ai)
   - [Docs](https://www.wireflow.ai/docs/api/webhooks)
   - [Pricing](https://www.wireflow.ai/pricing)
   - [Official source 2](https://www.wireflow.ai/docs/api/run)
@@ -96,6 +108,8 @@ https://www.wireflow.ai/docs/api/webhooks
 ### 2. OpenAI
 
 *image and video generation API*
+
+![OpenAI screenshot](https://assets.wireflow.ai/competitors/openai-0dd25d6d038b.png?v=r5)
 
 - **What it is:** OpenAI's API for image generation and editing, and for Sora video jobs. Zapier, Make and n8n each ship an OpenAI app or node with an image action, and n8n's node also has a Generate a Video operation.
 - **Limits:** Image requests return the result in the same response. Video jobs are polled or reported by a project-level webhook (video.completed or video.failed) that you set in the webhook settings, not per request.
@@ -118,6 +132,8 @@ https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai
 
 *Google's API for Gemini image and video models*
 
+![Google Gemini API screenshot](https://assets.wireflow.ai/competitors/google-gemini-b087c7f5788e.png?v=r5)
+
 - **What it is:** Google's developer API for Gemini models, including image generation and video generation. Zapier (Google AI Studio), Make (Google Gemini AI) and n8n (Google Gemini node) each have an image and a video action.
 - **Limits:** Video runs as a long-running operation. Gemini API webhooks cover batch jobs, interactions and video generation, set for the whole project or passed per request.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
@@ -138,6 +154,8 @@ https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.googlegem
 ### 4. Replicate
 
 *API for running hosted open and proprietary models*
+
+![Replicate screenshot](https://assets.wireflow.ai/competitors/replicate-dc84c666a83f.png?v=r5)
 
 - **What it is:** An API that runs hosted models as predictions. A prediction can call your webhook on start, output, logs or completion, and you can poll it by ID.
 - **Limits:** There is no Replicate app with an image action in Zapier's directory (the app named Replicate there is an unrelated feedback tool), and Make documents only community-developed Replicate apps. n8n has no built-in node. API prediction data is removed after an hour by default.
@@ -160,6 +178,8 @@ https://replicate.com/docs/topics/webhooks/setup-webhook
 
 *generative media API with a queue for long jobs*
 
+![fal screenshot](https://assets.wireflow.ai/competitors/fal-ai-0ec799965278.png?v=r5)
+
 - **What it is:** A generative media API. Requests go into a queue that you poll by status URL, or fal POSTs the result to the fal_webhook URL you pass. fal publishes an n8n node that n8n lists as verified, and Make documents a fal.ai app.
 - **Limits:** There is no fal app in Zapier's directory. The n8n node is a community node you install, not a built-in one.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested. The n8n node @fal-ai/n8n-nodes-fal is published by fal and listed as verified by n8n.
@@ -180,6 +200,8 @@ https://n8n.io/integrations/falai/
 ### 6. Runway
 
 *API for Runway's video and image models*
+
+![Runway screenshot](https://assets.wireflow.ai/competitors/runway-2c1b2d181c30.png?v=r5)
 
 - **What it is:** Runway's developer API for video and image generation. Generation calls return a task ID that you poll at GET /v1/tasks/{id}. Zapier and Make both list a Runway app with image and video actions.
 - **Limits:** The API docs reviewed document no completion webhook. n8n has no built-in node; the only n8n package found is a third-party community node. Output URLs expire within 24 to 48 hours.
@@ -202,6 +224,8 @@ https://docs.dev.runwayml.com/api-details/sdks/
 
 *image and video generation API*
 
+![Leonardo.Ai screenshot](https://assets.wireflow.ai/competitors/leonardo-ai-a0087167d41f.png?v=r5)
+
 - **What it is:** An image and video generation API. An async generation returns an ID to poll, and a production API key can carry a webhook callback URL that receives finished generations. Make documents a Leonardo.Ai app.
 - **Limits:** There is no Leonardo.Ai app in Zapier's directory and no n8n node, built-in or dedicated community package. The callback URL is set when the API key is created; changing it means creating a new key.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
@@ -223,6 +247,8 @@ https://docs.leonardo.ai/docs/guide-to-the-webhook-callback-feature
 
 *Stable Image API for generation and upscaling*
 
+![Stability AI screenshot](https://assets.wireflow.ai/competitors/stability-ai-2c0c269d4099.png?v=r5)
+
 - **What it is:** Stability AI's REST API for image generation, editing and upscaling. Slow endpoints return an ID that you poll at GET /v2beta/results/{id}. Make documents a Stability AI app with image and video modules.
 - **Limits:** There is no Stability AI app in Zapier's directory and no built-in n8n node. The API reference documents no completion webhook, and async results are stored for 24 hours.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested. No completion webhook is documented; async results are polled and stored for 24 hours.
@@ -240,6 +266,8 @@ https://platform.stability.ai/docs/api-reference
 ### 9. Ideogram
 
 *image generation API with async endpoints and signed webhooks*
+
+![Ideogram screenshot](https://assets.wireflow.ai/competitors/ideogram-be73c9cf0104.png?v=r5)
 
 - **What it is:** An image generation API. Async endpoints return a generation ID and POST a signed result to your webhook_url, with GET /v1/generations/{generation_id} as the polling fallback. Zapier and Make both list an Ideogram app with image actions.
 - **Limits:** n8n has no built-in node and an npm search found no Ideogram community node. Ideogram says webhook delivery is retried only a limited number of times, so keep the polling fallback.
@@ -378,12 +406,12 @@ OpenAI and the Gemini API are the low-setup choice for n8n, because both have a 
 
 ## Acceptance recipe
 
-- Pick one real brief from your automation tool and note its inputs and the image or video you expect back.
-- Run it once through the native app or node, where one exists, and once through a plain HTTP request step.
-- For a slow job, register a completion callback and point it at a webhook trigger in n8n, Zapier or Make; check that the payload carries the job ID you need to match it.
-- Turn the callback off and confirm the polling path returns the same result.
-- Force a failure, such as a bad input URL, and check what each path returns.
-- Download the output to your own storage before the provider's link expires.
+1. Pick one real brief from your automation tool and note its inputs and the image or video you expect back.
+2. Run it once through the native app or node, where one exists, and once through a plain HTTP request step.
+3. For a slow job, register a completion callback and point it at a webhook trigger in n8n, Zapier or Make; check that the payload carries the job ID you need to match it.
+4. Turn the callback off and confirm the polling path returns the same result.
+5. Force a failure, such as a bad input URL, and check what each path returns.
+6. Download the output to your own storage before the provider's link expires.
 
 ## Evaluation record
 
@@ -396,7 +424,7 @@ Record the provider, the automation tool, the app or node version, the request o
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -407,7 +435,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 
