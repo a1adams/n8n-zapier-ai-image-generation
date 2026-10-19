@@ -15,7 +15,7 @@ As of 6 Oct 2026, OpenAI and the Google Gemini API are the only providers here w
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-12** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-19** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -54,11 +54,11 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | Yes | [check](https://www.wireflow.ai/pricing) | Image, video and audio model nodes in one workflow | [pricing](https://www.wireflow.ai/pricing) | n/a |
-| **[OpenAI](#2-openai)** | Yes | [check](https://developers.openai.com/api/docs/pricing) | Image generation and editing, video jobs | [pricing](https://developers.openai.com/api/docs/pricing) | [openai/openai-python](https://github.com/openai/openai-python), 31,823 ★, v3.29.0 |
-| **[Google Gemini API](#3-google-gemini-api)** | Yes | [check](https://ai.google.dev/gemini-api/docs/pricing) | Image generation and editing, video generation | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | [googleapis/python-genai](https://github.com/googleapis/python-genai), 4,018 ★, v2.29.0 |
-| **[Replicate](#4-replicate)** | Yes | [check](https://replicate.com/pricing) | Hosted image, video and other models | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python), 917 ★, 1.0.7 |
-| **[fal](#5-fal)** | Yes | [check](https://fal.ai/pricing) | Hosted image, video and audio models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal), 968 ★, fal_v1.81.4 |
-| **[Runway](#6-runway)** | Yes | [check](https://docs.dev.runwayml.com/guides/pricing/) | Video and image generation models | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/sdk-python](https://github.com/runwayml/sdk-python), 26 ★, v5.21.0 |
+| **[OpenAI](#2-openai)** | Yes | [check](https://developers.openai.com/api/docs/pricing) | Image generation and editing, video jobs | [pricing](https://developers.openai.com/api/docs/pricing) | [openai/openai-python](https://github.com/openai/openai-python), 31,889 ★, v3.35.1 |
+| **[Google Gemini API](#3-google-gemini-api)** | Yes | [check](https://ai.google.dev/gemini-api/docs/pricing) | Image generation and editing, video generation | [pricing](https://ai.google.dev/gemini-api/docs/pricing) | [googleapis/python-genai](https://github.com/googleapis/python-genai), 4,033 ★, v2.31.0 |
+| **[Replicate](#4-replicate)** | Yes | [check](https://replicate.com/pricing) | Hosted image, video and other models | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python), 918 ★, 1.0.7 |
+| **[fal](#5-fal)** | Yes | [check](https://fal.ai/pricing) | Hosted image, video and audio models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal), 972 ★, isolate_proto_v0.34.5 |
+| **[Runway](#6-runway)** | Yes | [check](https://docs.dev.runwayml.com/guides/pricing/) | Video and image generation models | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/sdk-python](https://github.com/runwayml/sdk-python), 26 ★, v5.22.0 |
 | **[Leonardo.Ai](#7-leonardoai)** | Yes | [check](https://docs.leonardo.ai/docs/payg-guide) | Image and video generation models | [pricing](https://docs.leonardo.ai/docs/payg-guide) | [Leonardo-Interactive/leonardo-python-sdk](https://github.com/Leonardo-Interactive/leonardo-python-sdk), 26 ★, v7.0.0 |
 | **[Stability AI](#8-stability-ai)** | Yes | [check](https://platform.stability.ai/pricing) | Image generation, editing and upscaling | [pricing](https://platform.stability.ai/pricing) | n/a |
 | **[Ideogram](#9-ideogram)** | Yes | [check](https://ideogram.ai/pricing/?pricing_tab=api) | Image generation, editing and upscaling | [pricing](https://ideogram.ai/pricing/?pricing_tab=api) | n/a |
