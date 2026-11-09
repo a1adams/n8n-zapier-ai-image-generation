@@ -1,7 +1,7 @@
 {
   "keyword": "n8n image generation",
   "title": "n8n image generation, plus Zapier and Make: which AI image and video APIs have a node, an app or a webhook",
-  "lastChecked": "2026-11-02",
+  "lastChecked": "2026-11-09",
   "capabilityChecks": [
     {
       "key": "zapierApp",
@@ -102,11 +102,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 32016,
-        "lastPush": "2026-11-02T15:08:55Z",
-        "latestRelease": "v3.42.1",
-        "latestReleaseDate": "2026-11-01",
-        "checkedAt": "2026-11-02"
+        "stars": 32093,
+        "lastPush": "2026-11-09T16:12:57Z",
+        "latestRelease": "v3.48.0",
+        "latestReleaseDate": "2026-11-09",
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -139,11 +139,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 4054,
-        "lastPush": "2026-10-31T00:34:25Z",
-        "latestRelease": "v2.34.0",
-        "latestReleaseDate": "2026-10-29",
-        "checkedAt": "2026-11-02"
+        "stars": 4058,
+        "lastPush": "2026-11-08T20:32:42Z",
+        "latestRelease": "v3.0.0",
+        "latestReleaseDate": "2026-11-06",
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -180,7 +180,7 @@
         "lastPush": "2025-08-26T17:18:17Z",
         "latestRelease": "1.0.7",
         "latestReleaseDate": "2025-05-27",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -213,11 +213,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 979,
-        "lastPush": "2026-11-02T15:30:15Z",
+        "stars": 981,
+        "lastPush": "2026-11-09T12:31:12Z",
         "latestRelease": "fal_v1.84.0",
         "latestReleaseDate": "2026-10-30",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -254,7 +254,7 @@
         "lastPush": "2026-11-02T14:44:57Z",
         "latestRelease": "v5.24.0",
         "latestReleaseDate": "2026-10-23",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -287,11 +287,11 @@
         "pollingEndpoint": true
       },
       "live": {
-        "stars": 27,
+        "stars": 26,
         "lastPush": "2026-08-04T00:43:49Z",
         "latestRelease": "v7.0.0",
         "latestReleaseDate": "2026-02-05",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
